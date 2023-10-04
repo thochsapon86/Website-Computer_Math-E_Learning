@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์สื่อการเรียนการสอนวิชาคณิตศาสตร์คอมพิวเตอร์สำหรับชั้นปวช.2</title>
+    <link rel="icon" type="image/png" href="../images/favicon.png"/>
+    <!--BootstrapLink-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--CustomCSSLink-->
+    <link rel="stylesheet" href="../css/custom.css">
+    <!--AOSLink-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--GoogleLink-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="body-customize">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+        <div class="container">
+          <a class="navbar-brand" href="../webpage/index.html">
+            <img src="../images/logo.png" alt="logo" width="50%" height="50%" style="flex-shrink: 0;" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../webpage/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../webpage/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../webpage/corses.html">Lessons</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- Navbar -->
+
+<!--Container-->
+      <div class="container-md mt-5">
+        <div class="row g-2 row-custom">
+          <!--SideNavbar-->
+          <div class="col-sm col-custom-navbar">
+            <div class="container-sm">
+              <p class="h5 h1-container">บทที่ 1 ระบบตัวเลขและจำนวน</p>
+              <div id="list-example" class="list-group list-custom">
+                <button id="describe_button" class="list-group-item list-group-item-action list-item-responsive hover_effect active" onclick="describe_toggle()">คำอธิบายรายบท</button>
+                <button id="pre_exam_button" class="list-group-item list-group-item-action list-item-responsive hover_effect" onclick="pre_exam_toggle()">แบบทดสอบก่อนเรียน</button>
+                <!-- <button id="picture_button" class="list-group-item list-group-item-action list-item-responsive hover_effect" onclick="picture_toggle()">เนื้อหา</button> -->
+                <button id="video_button" class="list-group-item list-group-item-action list-item-responsive hover_effect" onclick="video_toggle()">วีดีโอประกอบเนื้อหา</button>
+                <button id="exam_button" class="list-group-item list-group-item-action list-item-responsive hover_effect" onclick="exam_toggle()">แบบทดสอบหลังเรียน</button>
+              </div>
+            </div>        
+          </div>
+          <!--SideNavbar-->
+
+          <!--Learning-->
+          <div class="col-sm col-custom-container">
+            <div class="container-md d-flex justify-content-center round-container mt-0 container-responsive py-0" style="height: 75%;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;background: white;">
+              
+              <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example overflow-auto learning-responsive px-1 pb-7 pt-3" >
+                <!--Form-->
+                <iframe id="form" class="hide" src="https://docs.google.com/forms/d/e/1FAIpQLSdZIyvnIBuaWRBnRJouc5EjZxkValAaTKL5xlDFICkZeOHxiw/viewform?embedded=true" width="1024" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe id="exam" class="hide" src="https://docs.google.com/forms/d/e/1FAIpQLSc2ZiKr8J1wMqqNzeq6tKfg86GSsk4dyzyKcfXsjsLY2woN8Q/viewform?embedded=true" width="1024" height="3140" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <!--Form-->
+                
+                
+                <!--Videos-->
+                <div id="videos" class="hide">
+                  <div id="video">
+                    <iframe id="ytplayer" type="text/html" width="1024" height="576"
+                      src="https://www.youtube.com/embed/XSOjM-MF9Sg" frameborder="0" allowfullscreen>
+                    </iframe>
+                    <p class="fs-4" style="color: gray;font-style: italic;">- แหล่งที่มา youtube : suphiya Gm เมื่อวันที่ 13/9/2566</p>
+                  </div>
+                </div>
+                 <!--Videos-->
+
+                 <!--Pictures-->
+                <div>
+                  <!--เนื้อหาภาพ-->
+                  <!-- <div id="lesson1" class="hide">
+                    <img id="current-image" class="img-responsive" src="../images/1-1.jpg" alt="">
+                  </div> -->
+                  <!--เนื้อหาภาพ-->
+                  <div id="describe_lesson1">
+                    <img class="img-responsive" src="../images/1-0.jpg" alt="">
+                  </div>
+                </div>
+                 <!--Pictures-->
+
+              </div>
+              <!--Button-->
+              <div class="btns hide" id="btn_status">
+                <button id="prev-button" class="btn btn-outline-primary my-1">Prev</button>
+                <button id="next-button" class="btn btn-primary my-1">Next</button>
+                <!-- <a id="" class="btn btn-primary btn-control" href="https://docs.google.com/forms/d/e/1FAIpQLSc2ZiKr8J1wMqqNzeq6tKfg86GSsk4dyzyKcfXsjsLY2woN8Q/viewform">ไปทำแบบทดสอบ</a> -->
+              </div>
+              <!--Button-->
+
+            </div>
+          </div>
+          <!--Learning-->
+        </div>
+      </div>
+
+
+
+
+<!--Script-->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/youtubeapi.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--Image gallery-->
+<script>
+  var gallery = document.getElementById('lesson1');
+  const prevButton = document.getElementById('prev-button');
+  const nextButton = document.getElementById('next-button');
+  const images = ["../images/1-1.jpg", 
+                  "../images/1-2.jpg", 
+                  "../images/1-3.jpg", 
+                  "../images/1-4.jpg", 
+                  "../images/1-5.jpg", 
+                  "../images/1-6.jpg",];
+  let currentIndex = 0;
+
+  prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage();
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage();
+  });
+
+  function updateImage() {
+
+    var img = gallery.querySelector('#current-image');
+
+    img.classList.add('fade-out');
+    setTimeout(() => {
+      img.src = images[currentIndex];
+      img.alt = images[currentIndex];
+      img.classList.remove('fade-out');
+    }, 500);
+  };
+
+</script>
+<!--Toggle switch-->
+<script>
+    function describe_toggle() {
+      document.getElementById('form').classList.remove("hide")
+      document.getElementById('video_button').classList.remove("active")
+      // document.getElementById('picture_button').classList.remove("active");
+      document.getElementById('exam_button').classList.remove("active");
+      document.getElementById('pre_exam_button').classList.remove("active")
+      document.getElementById('describe_lesson1').classList.remove("hide")
+
+      document.getElementById('describe_button').className = "active list-group-item list-group-item-action list-item-responsive hover_effect";
+      // document.getElementById('lesson1').className = "hide";
+      document.getElementById('videos').className = "hide";
+      document.getElementById('form').className = 'hide';
+      document.getElementById('exam').className = 'hide';
+      document.getElementById('btn_status').className = "hide";
+    }
+
+    function pre_exam_toggle() {
+    document.getElementById('form').classList.remove("hide")
+    document.getElementById('video_button').classList.remove("active")
+    // document.getElementById('picture_button').classList.remove("active");
+    document.getElementById('exam_button').classList.remove("active");
+    document.getElementById('describe_button').classList.remove("active");
+    
+    document.getElementById('videos').className = "hide";
+    document.getElementById('describe_lesson1').className = "hide";
+    // document.getElementById('lesson1').className = "hide";
+    document.getElementById('btn_status').className = "hide";
+    document.getElementById('pre_exam_button').className = "active list-group-item list-group-item-action list-item-responsive hover_effect";
+
+  }
+
+  // function picture_toggle() {
+  //   document.getElementById('lesson1').classList.remove("hide");
+  //     document.getElementById('btn_status').classList.remove("hide")
+  //     document.getElementById('pre_exam_button').classList.remove("active")
+  //     document.getElementById('video_button').classList.remove("active")
+  //     document.getElementById('exam_button').classList.remove("active");
+  //     document.getElementById('describe_button').classList.remove("active");
+
+  //     document.getElementById('picture_button').className = "active list-group-item list-group-item-action list-item-responsive hover_effect";
+  //     document.getElementById('btn_status').className = "btns";
+  //     document.getElementById('videos').className = "hide";
+  //     document.getElementById('form').className = 'hide';
+  //     document.getElementById('exam').className = 'hide';
+  //     document.getElementById('describe_lesson1').className = 'hide';
+
+  // }
+    
+    function video_toggle() {
+      // document.getElementById('lesson1').className = "hide";
+      document.getElementById('form').className = 'hide';
+      document.getElementById('exam').className = 'hide';
+      document.getElementById('describe_lesson1').className = 'hide';
+      document.getElementById('video_button').className = 'active list-group-item list-group-item-action list-item-responsive hover_effect';
+
+      document.getElementById('videos').classList.remove("hide");
+      document.getElementById('pre_exam_button').classList.remove("active");
+      // document.getElementById('picture_button').classList.remove("active");
+      document.getElementById('exam_button').classList.remove("active");
+      document.getElementById('describe_button').classList.remove("active");
+  }
+
+  function exam_toggle() {
+    document.getElementById('exam').classList.remove("hide")
+    document.getElementById('video_button').classList.remove("active")
+    // document.getElementById('picture_button').classList.remove("active");
+    document.getElementById('pre_exam_button').classList.remove("active");
+    document.getElementById('describe_button').classList.remove("active");
+
+    document.getElementById('videos').className = "hide";
+    // document.getElementById('lesson1').className = "hide";
+    document.getElementById('form').className = "hide";
+    document.getElementById('describe_lesson1').className = 'hide';
+    document.getElementById('btn_status').className = "hide";
+    document.getElementById('exam_button').className = "active list-group-item list-group-item-action list-item-responsive hover_effect";
+  }
+</script>
+<script>
+  AOS.init();
+</script>
+<!--Script-->
+</body>
+</html>
