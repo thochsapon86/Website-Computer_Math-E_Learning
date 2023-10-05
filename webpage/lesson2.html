@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์สื่อการเรียนการสอนวิชาคณิตศาสตร์คอมพิวเตอร์สำหรับชั้นปวช.2</title>
+    <!--BootstrapLink-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--CustomCSSLink-->
+    <link rel="stylesheet" href="../css/custom.css">
+    <!--AOSLink-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--GoogleLink-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="body-customize">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+        <div class="container">
+          <a class="navbar-brand" href="../webpage/index.html">
+            <img src="../images/logo.png" alt="logo" width="50%" height="50%" style="flex-shrink: 0;" class="img-fluid">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../webpage/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../webpage/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../webpage/corses.html">Lessons</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- Navbar -->
+
+<!--Container-->
+<div class="container-md mt-5">
+  <div class="row g-2 row-custom">
+    <!--SideNavbar-->
+    <div class="col-sm col-custom-navbar">
+      <div class="container-sm">
+        <p class="h5 h1-container font-responsive">บทที่ 2 ระบบเลขฐาน</p>
+        <div id="list-example" class="list-group list-custom">
+          <button id="describe_button" class="list-group-item list-group-item-action list-item-responsive hover_effect active" onclick="describe_toggle()">คำอธิบายรายบท</button>
+          <button id="pre_exam_button" class="list-group-item list-group-item-action list-item-responsive hover_effect" onclick="pre_exam_toggle()">แบบทดสอบก่อนเรียน</button>
+          <!-- <button id="picture_button" class="list-group-item list-group-item-action list-item-responsive hover_effect" onclick="picture_toggle()">เนื้อหา</button> -->
+          <button id="video_button" class="list-group-item list-group-item-action list-item-responsive hover_effect" onclick="video_toggle()">วีดีโอประกอบเนื้อหา</button>
+          <button id="exam_button" class="list-group-item list-group-item-action list-item-responsive hover_effect" onclick="exam_toggle()">แบบทดสอบหลังเรียน</button>
+        </div>
+      </div>        
+    </div>
+          <!--SideNavbar-->
+
+          <!--Learning-->
+          <div class="col-sm col-custom-container">
+            <div class="container-md d-flex justify-content-center round-container mt-0 container-responsive py-0" style="height: 75%;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;background: white;">
+              
+              <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example overflow-auto learning-responsive px-1 pb-7 pt-3" >
+                <!--Form-->
+                <iframe id="form" class="hide" src="https://docs.google.com/forms/d/e/1FAIpQLSfz0dExhAAmnBvATO7skYOlYu_uCzFjsOxOjnfyOPN-k-GuYw/viewform?embedded=true" width="1024" height="1700" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe id="exam" class="hide" src="https://docs.google.com/forms/d/e/1FAIpQLSf06IdNq6QzEMGyMzP-Gtm5v5QFM8nITtm95DVWsUFyXv3TVw/viewform?embedded=true" width="1024" height="3140" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <!--Videos-->
+                <div id="videos" class="hide">
+                  <div id="video">
+                    <iframe id="ytplayer" type="text/html" width="1024" height="576"
+                      src="https://www.youtube.com/embed/TOobcBu-vIw?si" frameborder="0" allowfullscreen>
+                    </iframe>
+                    <p class="fs-4" style="color: gray;font-style: italic;">- แหล่งที่มา youtube : suphiya Gm เมื่อวันที่ 14/9/2566</p>
+                  </div>
+                </div>
+                 <!--Videos-->
+
+                 <!--Pictures-->
+                <div>
+                  <!-- <div id="lesson2" class="hide">
+                    <img id="current-image" class="img-responsive" src="../images/2-1.jpg" alt="">
+                  </div> -->
+                  <div id="describe_lesson1">
+                    <img class="img-responsive" src="../images/2-0.jpg" alt="">
+                  </div>
+                </div>
+                 <!--Pictures-->
+
+              </div>
+              <!--Button-->
+              <div class="btns hide" id="btn_status">
+                <button id="prev-button" class="btn btn-outline-primary my-1">Prev</button>
+                <button id="next-button" class="btn btn-primary my-1">Next</button>
+                <!-- <a id="" class="btn btn-primary btn-control" href="https://docs.google.com/forms/d/e/1FAIpQLSc2ZiKr8J1wMqqNzeq6tKfg86GSsk4dyzyKcfXsjsLY2woN8Q/viewform">ไปทำแบบทดสอบ</a> -->
+              </div>
+              <!--Button-->
+
+            </div>
+          </div>
+          <!--Learning-->
+        </div>
+      </div>
+
+
+
+
+<!--Script-->
+<script src="../js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="../js/youtubeapi.js"></script>
+<script src="../js/switch.js"></script>
+<script>
+  AOS.init();
+</script>
+<!--Script-->
+</body>
+</html>
